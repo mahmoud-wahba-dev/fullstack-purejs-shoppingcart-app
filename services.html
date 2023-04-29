@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
-
+    <title>SERVICES</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="public/css/swiper/swiper-bundle.min.css" />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -18,6 +19,7 @@
     />
     <!-- index css -->
     <link rel="stylesheet" href="public/css/index.css" />
+    <link rel="stylesheet" href="services.css" />
   </head>
 
   <body>
@@ -45,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active"  href="index.html">HOME</a>
+              <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="about.html">ABOUT US</a>
+              <a class="nav-link" href="about.html">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/services.html">SERVICES</a>
+              <a class="nav-link active" href="/services.html">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/gallery.html">GALLERY</a>
+              <a class="nav-link" href="gallery">GALLERY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact">CONTACT</a>
@@ -73,9 +75,177 @@
     <!-- navbar end  -->
 
     <!-- start about  -->
-    <h1>home</h1>
+    <div class="header_wrapper">
+      <header class="about_sec">
+        <h1 class="mb-0 z_index">SERVICES</h1>
+        <div class="z_index w-100">
+          <div class="line"></div>
+        </div>
+        <p class="z_index">
+          Our main services we provide
+        </p>
+        <div class="layer"></div>
+      </header>
+    </div>
+    <!-- our services section start -->
+    <section class="py-5">
+      <div class="container max_width_80">
+        <div class="row gy-5">
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i class="fa-solid fa-cookie-bite fa-bounce service_icon"></i>
+              </div>
+              <h5 class="service_title my-4">
+                BAKERY
+              </h5>
+              <p class="text-muted">
+                We have all your favorite traditional bread, 7 days a week! You
+                can choose from a rich variety of cookies, pastries and cakes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i
+                  class="fa-solid fa-cake-candles fa-beat fs_80 service_icon"
+                ></i>
+              </div>
+              <h5 class="service_title my-4">
+                CAKES
+              </h5>
+              <p class="text-muted">
+                We specialize in custom cakes for all occasions. You can choose
+                from a variety of designs to create the perfect cake for you.
+              </p>
+            </div>
+          </div>
 
-    <!-- start about  -->
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i
+                  class="fa-solid fa-martini-glass-citrus fa-flip fs_80 service_icon"
+                ></i>
+              </div>
+              <h5 class="service_title my-4">
+                FRESH JUICES
+              </h5>
+              <p class="text-muted">
+                Choose from a variety of fruits and veggies to make your
+                favorite juice. You can also enjoy a simple fresh squeezed
+                orange juice.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i
+                  class="fa-solid fa-ice-cream fa-shake fs_80 service_icon"
+                ></i>
+              </div>
+              <h5 class="service_title my-4">
+                CATERING
+              </h5>
+              <p class="text-muted">
+                We do catering all from weddings to business functions. We offer
+                our authentic food to be simply delivered, or we can serve it
+                for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i
+                  class="fa-solid fa-motorcycle fa-spin fs_80 service_icon"
+                ></i>
+              </div>
+              <h5 class="service_title my-4">
+                SMILE TRUCK
+              </h5>
+              <p class="text-muted">
+                Our new awesome team will be hitting the streets with our best
+                picked up goodies for you and much more.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card_container text-center">
+              <div class="img_container_services">
+                <i
+                  class="fa-solid fa-cake-candles fa-spin-pulse fs_80 service_icon"
+                ></i>
+              </div>
+              <h5 class="service_title my-4">
+                WEDDINGS
+              </h5>
+              <p class="text-muted">
+                From elegant wedding cakes to delicious gift baskets, we can
+                help you create a perfect and unique wedding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our services section end -->
+    <!-- OUR CREATIONS section start -->
+    <section class="py-5">
+      <h6 class="text-center creation_title">
+        OUR CREATIONS
+      </h6>
+      <p class="text-center my-4 text-muted">
+        A selection of some of our finest work to date
+      </p>
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-1.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="public/imgs/services/img-10.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- OUR CREATIONS section end -->
+
+    <!-- end services  -->
 
     <!-- footer start -->
     <footer class="bg-dark text-white py-5 pb-2">
@@ -256,8 +426,13 @@
       <i class="fa-solid fa-arrow-turn-up to_top_icon"></i>
     </a>
     <!-- arrow to top -->
+
+    <!-- swiper library for slider -->
+    <script src="public/js/swiper/swiper-bundle.min.js"></script>
+
     <!-- bootstrap -->
     <script src="public/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="public/js/index.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>

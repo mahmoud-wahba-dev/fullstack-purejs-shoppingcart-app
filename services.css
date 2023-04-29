@@ -1,0 +1,123 @@
+:root {
+  --yellow: #fdb822;
+  --gray: #684f40;
+}
+h2 {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 27px;
+}
+p {
+  font-size: 14px;
+}
+/* about_sec start*/
+
+.about_sec {
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-image: url(public/imgs/about/header-bg-1-about.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+  background-attachment: fixed;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #383232a8;
+}
+.z_index {
+  z-index: 99;
+}
+.line {
+  width: 10%;
+  border: 2px solid var(--yellow);
+  height: 2px;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+.header_wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+  margin-top: 10px;
+}
+/* about_sec end*/
+
+/* services section start */
+.img_container_services {
+  border: 1px solid #696969;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 0.5s;
+}
+.img_container_services i {
+  font-size: 140px;
+  color: #696969;
+}
+.service_title {
+  color: var(--yellow);
+}
+.img_container_services:hover {
+  border-color: var(--yellow);
+}
+.img_container_services:hover .service_icon {
+  color: var(--yellow);
+  transition: all 0.8s;
+}
+.service_title:hover {
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.8s;
+}
+.max_width_80 {
+  max-width: 80%;
+}
+.fs_80 {
+  font-size: 80px !important;
+}
+/* services section end */
+
+/* OUR CREATIONS sec start */
+.creation_title {
+  background-color: var(--gray);
+  width: fit-content;
+  color: #fff;
+  margin: auto;
+  padding: 7px 20px;
+}
+
+/* OUR CREATIONS sec start */
+/* swiper start */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+/* swiper end */

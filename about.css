@@ -10,7 +10,7 @@ h2 {
 p {
   font-size: 14px;
 }
-/* about_sec */
+/* about_sec start*/
 
 .about_sec {
   height: 55vh;
@@ -43,7 +43,13 @@ p {
   margin: 12px auto;
   border-radius: 10px;
 }
-
+.header_wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid var(--gray);
+  border-bottom: 2px solid var(--gray);
+  margin-top: 10px;
+}
 /* about_sec */
 /* discover sec start */
 .bg_dark {

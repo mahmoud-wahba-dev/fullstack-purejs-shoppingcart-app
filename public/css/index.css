@@ -111,7 +111,7 @@ footer .icon:hover {
   border: 2px solid var(--yellow);
   position: fixed;
   bottom: 11%;
-  right: 5%;
+  right: 1%;
   cursor: pointer;
   z-index: 99;
   opacity: 0;
