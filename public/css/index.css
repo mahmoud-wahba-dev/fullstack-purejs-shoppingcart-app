@@ -6,12 +6,12 @@
 /* fonts */
 @font-face {
   font-family: Montserrat;
-  src: url(/public/fonts/Montserrat-heading/Montserrat-VariableFont_wght.ttf);
+  src: url(../fonts/Montserrat-heading/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: Open_Sans;
-  src: url(/public/fonts/Open_Sans-paragraph/OpenSans-VariableFont_wdth\,wght.ttf);
+  src: url(../fonts/Open_Sans-paragraph/OpenSans-VariableFont_wdth\,wght.ttf);
 
 }
 

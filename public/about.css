@@ -15,7 +15,7 @@ p {
 .about_sec {
   height: 55vh;
   background-repeat: no-repeat;
-  background-image: url(public/imgs/about/header-bg-1-about.jpg);
+  background-image: url(imgs/about/header-bg-1-about.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -232,7 +232,7 @@ p {
 
 .our_leaders {
   height: 50vh;
-  background-image: url(public/imgs/about/our_leaders.jpg);
+  background-image: url(imgs/about/our_leaders.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
