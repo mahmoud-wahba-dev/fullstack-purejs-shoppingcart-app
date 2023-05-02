@@ -3,7 +3,8 @@ let phoneInput = document.getElementById("phone_input");
 let emailInput = document.getElementById("email_input");
 let textAreaInput = document.getElementById("text_area_input");
 let contactForm = document.getElementById("contact_form");
-let allInputs = document.querySelectorAll(".input_class")
+let allInputs = document.querySelectorAll(".input_class");
+let dvDebug = document.getElementById("dv_debug");
 function setErrorFor(input, message) {
   let parentElement = input.parentElement;
   let errorMsg = parentElement.querySelector(".error_msg");
@@ -32,7 +33,7 @@ function validateEmail(input) {
 }
 
 function validatePhone(input) {
-  let validRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  let validRegex = /^01[0125][0-9]{8}$/;
   if (input.value.match(validRegex)) {
     return true;
   } else {
@@ -88,12 +89,31 @@ contactForm.addEventListener("submit", (eo) => {
     var toastLiveExample = document.getElementById("liveToast");
     var toast = new bootstrap.Toast(toastLiveExample);
     toast.show();
-    allInputs.forEach((item) => {
-            item.value = "";
-        item.classList.remove("is-valid")
-    })
+    sendMails()
+  console.log("send mails1");
 
+
+    allInputs.forEach((item) => {
+      item.value = "";
+      item.classList.remove("is-valid");
+    });
   } else {
     console.log("error");
   }
 });
+
+
+ function sendMails() {
+  console.log("send mails");
+    let params = {
+        name : nameInput.value,
+        email_id : emailInput.value,
+        phone : phoneInput.value,
+        message : textAreaInput.value,
+
+    }
+    emailjs.send("service_68x1m1n","template_ybkpufp", params).then((res) => {
+      console.log("success", res.status); 
+      console.log(params);
+    })
+}

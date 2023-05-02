@@ -12,6 +12,15 @@
     <!-- index css -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Z01fVRvktM3o5WmLX");
+      })();
+    </script>
   </head>
 
   <body>
@@ -148,26 +157,24 @@
         </div>
       </div>
 
-          <!-- toast show section start -->
-    <section>
-      <div class="toast_container p-3" style="z-index: 11;">
-        <div
-          id="liveToast"
-          class="toast bg-success text-white"
-          role="alert"
-          aria-live="assertive"
-          aria-atomic="true"
-          ata-bs-autohide="false"
-        >
-          <div class="toast-body">
-            Thanks For Your Message
+      <!-- toast show section start -->
+      <section>
+        <div class="toast_container p-3" style="z-index: 11;">
+          <div
+            id="liveToast"
+            class="toast bg-success text-white"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-body">
+              Thanks For Your Message
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <!-- toast show section end -->
     </section>
-    <!-- toast show section end -->
-    </section>
-
 
     <!-- end contact section -->
     <!-- end gallery  -->
