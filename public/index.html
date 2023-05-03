@@ -7,15 +7,9 @@
     <title>HOME PAGE</title>
 
     <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="bootstrap-5.2.3-dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
     <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="fontawesome-free-6.4.0-web/css/all.min.css"
-    />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css" />
     <!-- index css -->
     <link rel="stylesheet" href="css/index.css" />
   </head>
@@ -25,11 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand logo_container" href="#">
-          <img
-            class="img-fluid"
-            src="imgs/bakery-logo-dark.png"
-            alt=""
-          />
+          <img class="img-fluid" src="imgs/bakery-logo-dark.png" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -45,22 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active"  href="index.html">HOME</a>
+              <a class="nav-link active" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="about.html">ABOUT US</a>
+              <a class="nav-link" href="about.html">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/services.html">SERVICES</a>
+              <a class="nav-link" href="services.html">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/gallery.html">GALLERY</a>
+              <a class="nav-link" href="gallery.html">GALLERY</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq">FAQS</a>
             </li>
 
             <li class="nav-item">
@@ -72,10 +59,227 @@
     </nav>
     <!-- navbar end  -->
 
-    <!-- start about  -->
-    <h1>home</h1>
+    <!-- start home  -->
+    <!-- start header sec -->
+    <header class="hero_sec">
+      <div class="video_container">
+        <video
+          class="video"
+          poster="imgs/home/slider-video-cover.jpg"
+          autoplay
+          loop
+          muted
+        >
+          <source src="imgs/home/video-slider-BAULI.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-    <!-- start about  -->
+        <div class="layer_video">
+          <h1>
+            Daily Fresh <br />
+            Baked Goods
+          </h1>
+          <div class="mt-4">
+            <a href="##" class="btn btn_order">ORDER NOW</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header sec -->
+    <!-- start product sec -->
+    <section class="py-5 my-4 products_sec">
+      <div class="container text-center">
+        <h2 class="">
+          OUR LATEST BAKERY PRODUCTS
+        </h2>
+        <div class="my-4">
+          <div class="line_team"></div>
+        </div>
+        <p class="text-muted fs_15">
+          Check some of our best products and feel the great passion for food
+        </p>
+
+        <div class="products_container my-5">
+          <div class="row gy-5">
+            <div class="col-md-3">
+              <div class="card_container">
+                <div class="img_container">
+                  <img src="imgs/home/cookie-3.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="prod_details">
+                  <div class="prod_title">
+                    Sourdough
+                  </div>
+                  <p class="prod_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="price">
+                    3.99
+                  </div>
+                  <div class="icons_wrapper">
+                    <div class="icon_container">
+                      <i class="fa-solid fa-magnifying-glass prod_icon"></i>
+                    </div>
+                    <div class="icon_container">
+                      <i class="fa-solid fa-bag-shopping prod_icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn_prod" href="products.html"> SEE ALL PRODUCTS</a>
+      </div>
+    </section>
+    <!-- end product sec -->
+    <!-- start main service sec -->
+    <section class="py-5">
+      <div class="container text-center service_sec">
+        <h2 class="">
+          MAIN SERVICES WE PROVIDE
+        </h2>
+        <div class="my-4">
+          <div class="line_team"></div>
+        </div>
+        <p class="text-muted pb-4 mb-4">
+          Check some of our best products and feel the great passion for food
+        </p>
+
+        <div class="row gy-5">
+          <div class="col-md-3">
+            <div class="service_icon_container">
+              <i class="fa-solid fa-hotdog service_icon"></i>
+            </div>
+            <h6 class="service_title">LOTS OF BREAD</h6>
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt ut labore et <br />
+              dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service_icon_container">
+              <i class="fa-solid fa-cheese service_icon"></i>
+            </div>
+            <h6 class="service_title">CAKES</h6>
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt ut labore et <br />
+              dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service_icon_container">
+              <i class="fa-solid fa-cookie service_icon"></i>
+            </div>
+            <h6 class="service_title">COOKIES</h6>
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt ut labore et <br />
+              dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="service_icon_container">
+              <i class="fa-solid fa-stroopwafel service_icon"></i>
+            </div>
+            <h6 class="service_title">MUFFINS</h6>
+            <p class="mb-0 text-muted">
+              Lorem ipsum dolor sit amet, <br />
+              consectetur adipiscing elit, sed do <br />
+              eiusmod tempor incididunt ut labore et <br />
+              dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main service sec -->
+    <!-- start bread sec -->
+    <section class="py-5 my-2">
+      <div class="bread_sec">
+        <div class="container">
+          <h3 class="bread_title">DIFFERENT TYPES OF BREAD PRODUCTS</h3>
+          <p>YOU WILL FIND THEM ONLY THE BEST PRODUCTS IN OUR STORES</p>
+        </div>
+        <div class="layer_bread"></div>
+        <div class="img_bread_container">
+          <img src="imgs/home/img-bread.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end bread sec -->
+    <!-- start phone sec -->
+    <section class="my-5 py-5">
+      <div class="phone_sec">
+        <div class="yellow_layer"></div>
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-md-6 ">
+              <div class="img_phone_container">
+                <img
+                  src="imgs/home/m-bakery-mobile.png"
+                  class="img-fluid "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-5 offset-1 d-flex align-items-center">
+              <div class="text_container">
+                <div class="d-flex yellow_text_item">
+                  <div class="icon_phone_container">
+                    <i class="fa-solid fa-gift fa-beat yellow_sec_icons"></i>
+                  </div>
+                  <div class="mobile_sec_text_container w-75 ms-4">
+                    <h6 class="mb-3">BAKED WITH LOVE</h6>
+                    <p class="mb-0 fs_14">
+                      We are passionate about baking. Each of our handmade items
+                      are carefully baked with love.
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex yellow_text_item">
+                  <div class="icon_phone_container">
+                    <i class="fa-regular fa-clock fa-shake yellow_sec_icons"></i>
+                  </div>
+                  <div class="mobile_sec_text_container w-75 ms-4">
+                    <h6 class="mb-3">FRESH INGREDIENTS</h6>
+                    <p class="mb-0 fs_14">
+                      All of our products are made with the finest quality
+                      ingredients and guaranteed fresh.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex yellow_text_item">
+                  <div class="icon_phone_container">
+                    <i class="fa-solid fa-rotate fa-spin yellow_sec_icons"></i>                  </div>
+                  <div class="mobile_sec_text_container w-75 ms-4">
+                    <h6 class="mb-3">ON TIME DELIVERY</h6>
+                    <p class="mb-0 fs_14">
+                      We are very punctual and promise to deliver fresh made
+                      products to every customer on time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start phone sec -->
+
+    <!-- end home  -->
 
     <!-- footer start -->
     <footer class="bg-dark text-white py-5 pb-2">
@@ -225,10 +429,7 @@
             <div class="mb-3">
               <i class="fa-solid fa-location-dot"></i>
               <span class="ps-3">
-                30 Hampton Road Southampton,
-              </span>
-              <span class="ps-5">
-                NY 11968
+                30 Hampton Road South
               </span>
             </div>
             <div class="mb-3">
@@ -239,6 +440,10 @@
               >
                 info@bakerytheme.com
               </a>
+            </div>
+            <div class="mb-4 d-flex">
+              <a class="nav-link" href="faq.html">FAQS</a>
+              <a class="nav-link px-4" href="contact.html">Contact Us</a>
             </div>
           </div>
         </div>
