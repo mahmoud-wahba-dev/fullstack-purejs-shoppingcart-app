@@ -1,3 +1,4 @@
+
 :root {
   --yellow: #fdb822;
   --gray: #684f40;
@@ -6,7 +7,7 @@
 /* fonts */
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-heading/Montserrat-VariableFont_wght.ttf);
+  src: url("../fonts/Montserrat-heading/Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -258,6 +259,7 @@ h2 {
 
 .icon_container:hover .prod_icon {
   color: #fff;
+  font-size: 20px;
 }
 
 .icon_container:hover .icon_container {
@@ -267,7 +269,7 @@ h2 {
 
 .icon_container i {
   color: var(--yellow);
-  font-size: 25px;
+  font-size: 20px;
 }
 .card_container:hover .prod_details {
   opacity: 1;
@@ -322,8 +324,7 @@ h2 {
 }
 /* service sec start */
 /* bread_sec start */
-.bread_sec 
-{
+.bread_sec {
   height: 85vh;
   text-align: center;
   background-image: url(../imgs/home/bg-img-bread.jpg);
@@ -332,26 +333,25 @@ h2 {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-
 }
 .layer_bread {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .bread_title {
   padding-top: 100px;
   color: var(--gray);
   position: relative;
   font-size: 42px;
-
 }
 .bread_sec p {
   font-size: 25px;
 }
-.bread_sec .bread_title , .bread_sec p {
+.bread_sec .bread_title,
+.bread_sec p {
   z-index: 55;
 }
 .img_bread_container {
@@ -370,16 +370,17 @@ h2 {
   position: relative;
   /* background-color: #fdb822; */
   padding-top: 48px;
-
 }
 .yellow_layer {
   position: absolute;
   top: 0;
-  background-color: rgba(253,184,34,0.97);
+  background-color: rgba(253, 184, 34, 0.97);
   width: 100%;
   height: 100%;
 }
-.img_phone_container ,.icon_phone_container ,.mobile_sec_text_container{
+.img_phone_container,
+.icon_phone_container,
+.mobile_sec_text_container {
   z-index: 99;
   position: relative;
 }
@@ -392,20 +393,147 @@ h2 {
   justify-content: center;
   align-items: center;
   transition: all 1s;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-.yellow_sec_icons{
+.yellow_sec_icons {
   font-size: 38px;
-
 }
 
 .yellow_text_item:hover .icon_phone_container {
   background-color: #000;
-
 }
 .yellow_text_item:hover .yellow_sec_icons {
   color: #fff;
-
 }
 
 /* phone_sec start */
+
+/* our team sec start */
+
+.line_team {
+  width: 15%;
+  margin: auto;
+  height: 2px;
+  background-color: #ddd;
+}
+.line_team::after {
+  content: "";
+  height: 2px;
+  width: 25%;
+  display: block;
+  margin: auto;
+  width: 40%;
+  background-color: var(--yellow);
+}
+.chief_name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--gray);
+}
+.card_container {
+  border: 2px solid var(--gray);
+  position: relative;
+}
+.card_container:hover {
+  border-color: var(--yellow);
+  transition: all 0.5s;
+}
+.img_class_chief {
+  max-width: 83%;
+  margin-top: -35px;
+}
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.chief_layer {
+  /* width: 83%;
+  height: 90%; */
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  background-color: rgba(104, 79, 64, 0.6);
+  position: absolute;
+  /* top: 0; */
+  bottom: 60px;
+  right: 0;
+  left: 0px;
+  transition: all 0.4s;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.card_container:hover .chief_layer {
+  opacity: 1;
+  width: 83%;
+  height: 90%;
+  transform: rotate(0deg);
+}
+
+.social_layer {
+  display: flex;
+}
+.icon_container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+.icon_container i {
+  color: var(--gray);
+}
+.icon_container:hover {
+  background-color: var(--yellow);
+  transition: all 0.8s;
+}
+.icon_container:hover .chief_social {
+  color: #fff;
+}
+
+.social_container {
+  position: absolute;
+  bottom: 8%;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* our team sec end */
+
+/* * discover sec start */
+ .bg_dark {
+  background-color: #303234;
+}
+.btn_style:hover {
+  color: #fff;
+  transition: all 0.5s;
+}
+.newsletter_sec,
+.newsletter_sec h2 {
+  color: #d6d8db;
+}
+
+.input_class {
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #e1e1e1;
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+.btn_subscribe {
+  color: #343434;
+  border-color: #fff;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.btn_subscribe:hover {
+  border: 1.9px solid #fff;
+}
+
+/* discover sec end */

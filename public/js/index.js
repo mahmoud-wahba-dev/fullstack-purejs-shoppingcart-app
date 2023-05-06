@@ -11,25 +11,27 @@ window.onscroll = function () {
   }
 };
 
+// register page
+
+let userInfo = document.querySelector("#user_info");
+let  userDom = document.querySelector("#user");
+let links = document.querySelector("#links");
+let logOut = document.querySelector("#log_out");
 
 
 
-
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
+let registeredUser = localStorage.getItem("username");
+  console.log(registeredUser);
+if (registeredUser) {
+  console.log("user existed");
+  links.remove()
+  userInfo.style.display = "flex"
+  userDom.innerHTML = registeredUser
+} else {
+  console.log("msh fe");
 }
-</script>
+
+
+// logOut.addEventListener("click",(eo) => {
+//     localStorage.clear()
+// })
