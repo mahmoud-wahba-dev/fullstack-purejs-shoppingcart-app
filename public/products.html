@@ -17,7 +17,9 @@
 
   <body>
     <!-- navbar start  -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary navbar-dark bg-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-sm bg-body-tertiary navbar-dark bg-dark fixed-top"
+    >
       <div class="container-fluid">
         <a class="navbar-brand logo_container" href="#">
           <img class="img-fluid" src="imgs/bakery-logo-dark.png" alt="" />
@@ -78,6 +80,8 @@
                   <a class="text-reset" href="cart.html">view all products</a>
                 </div>
               </li>
+              <!-- <button onclick="addToCart()" id="addCart" class="add_to_cart">Add to cart</button> -->
+
             </ul>
           </ul>
         </div>
@@ -87,9 +91,14 @@
     <!-- <i class="fa-solid fa-cart-shopping"></i> -->
     <!-- start products page  -->
 
-    <div class="container">
+    <div class="container position-relative top_100">
       <div class="my-4">
-        <input id="search" class="form-control" type="search" placeholder="Search By Name">
+        <input
+          id="search"
+          class="form-control"
+          type="search"
+          placeholder="Search By Name"
+        />
       </div>
 
       <div class="products"></div>
@@ -278,7 +287,7 @@
     <!-- bootstrap -->
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/products.js"></script>
+    <!-- <script src="js/data.js"></script> -->
+    <script  src="js/products.js"></script>
   </body>
 </html>

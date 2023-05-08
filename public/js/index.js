@@ -21,14 +21,11 @@ let logOut = document.querySelector("#log_out");
 
 
 let registeredUser = localStorage.getItem("username");
-  console.log(registeredUser);
 if (registeredUser) {
-  console.log("user existed");
   links.remove()
   userInfo.style.display = "flex"
   userDom.innerHTML = registeredUser
 } else {
-  console.log("msh fe");
 }
 
 
