@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
+    <title>lOGIN PAGE</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
@@ -17,7 +17,7 @@
 
   <body>
     <!-- navbar start  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark ">
       <div class="container-fluid">
         <a class="navbar-brand logo_container" href="#">
           <img class="img-fluid" src="imgs/bakery-logo-dark.png" alt="" />
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link " href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT US</a>
@@ -64,7 +64,10 @@
             </ul>
             <ul class="navbar-nav ms-auto" id="user_info">
               <li class="nav-item">
-                <a id="user" class="nav-link" href="#">user</a>
+                <a id="user" class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a id="log_out" class="nav-link" href="#">Log out</a>
               </li>
             </ul>
           </ul>
@@ -78,10 +81,10 @@
     <!-- start register sec -->
     <div class="container">
       <div class="py-5 w-50 m-auto">
-        <form novalidate>
+        <form>
           <div class="mb-3">
-            <label for="user_name" class="form-label">User Name</label>
-            <input  type="text" class="form-control" id="user_name" />
+            <label for="email" class="form-label">Email</label>
+            <input required type="email" class="form-control" id="email" />
           </div>
           <!-- <div class="mb-3">
             <label for="email_input" class="form-label">Email Address</label>
@@ -89,14 +92,15 @@
           </div> -->
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" />
+            <input required type="password" class="form-control" id="password" />
           </div>
 
           <button id="sign_in_btn" type="submit" class="btn btn-primary">
             Submit
           </button>
         </form>
-        <div>
+        <div id="dv_debug"  class="dv_debug toast" data-bs-delay="9000"></div>
+        <div class="mt-2">
           Not have account  <a href="register.html">Register</a>
         </div>
       </div>

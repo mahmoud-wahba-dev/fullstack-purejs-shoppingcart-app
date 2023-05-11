@@ -1,5 +1,8 @@
 // function scroll top
 let toTopBtn = document.getElementById("to_top_btn");
+let dashboardIcon = document.getElementById("dashboard_icon");
+
+
 window.onscroll = function () {
   if (
     document.body.scrollTop > 100 ||
@@ -14,21 +17,72 @@ window.onscroll = function () {
 // register page
 
 let userInfo = document.querySelector("#user_info");
-let  userDom = document.querySelector("#user");
+let userDom = document.querySelector("#user");
 let links = document.querySelector("#links");
-let logOut = document.querySelector("#log_out");
+let log_out = document.querySelector("#log_out");
+
+// check if user already login from last time
+let userToken = localStorage.getItem("userToken");
+document.addEventListener("DOMContentLoaded" , function () {
+  console.log("asz");
+  if (userToken) {
+    links.remove();
+    userInfo.style.display = "flex";
+    console.log("user token exist");
+    showUserName();
+  } else {
+    console.log("user token  not exist");
+    userInfo.remove();
+  }
+})
+
+function showUserName() {
+  var myHeaders = new Headers();
+  myHeaders.append("Authorization", `Bearer ${userToken}`);
+  var requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow",
+  };
+
+  fetch("http://127.0.0.1:4000/users/profile", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      console.log(result);
+      userDom.innerHTML = result.username;
+
+
+      log_out.addEventListener("click", () => {
+          console.log("click");
+          localStorage.removeItem("userToken");
+          window.location.reload();
+        });
+
+
+      console.log(result.isAdmin);
+      if (result.isAdmin == "true") {
+          console.log("admin true");
+          dashboardIcon.style.display = "flex";
+
+      }else{
+
+        let path = window.location.pathname.substring(1);
+        if (path == "dashboard.html") {
+          document.write(` <h1> Not Authorized </h1> `)
+          window.location.href = "index.html"
+        }
+      }
 
 
 
-let registeredUser = localStorage.getItem("username");
-if (registeredUser) {
-  links.remove()
-  userInfo.style.display = "flex"
-  userDom.innerHTML = registeredUser
-} else {
+    })
+    // .catch((error) => console.log("error", error));
 }
 
 
-// logOut.addEventListener("click",(eo) => {
-//     localStorage.clear()
-// })
+
+// enable bbotstrap pop over 
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})

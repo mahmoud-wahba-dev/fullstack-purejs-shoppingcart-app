@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME PAGE</title>
+    <title>PRODUCT DETAILS</title>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
@@ -13,11 +13,12 @@
     <!-- index css -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="products.css" />
+    
   </head>
 
   <body>
     <!-- navbar start  -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand logo_container" href="#">
           <img class="img-fluid" src="imgs/bakery-logo-dark.png" alt="" />
@@ -52,8 +53,26 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="products.html">PRODUCTS</a>
+              <a class="nav-link" href="products.html">PRODUCTS</a>
             </li>
+            <ul class="navbar-nav ms-auto" id="links">
+              <li class="nav-item">
+                <a class="nav-link " href="register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Sign In</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto" id="user_info">
+              <li class="nav-item">
+                <a id="user" class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a id="log_out" class="nav-link" href="#">Log out</a>
+              </li>
+            </ul>
+
+
             <ul class="navbar-nav ms-auto d-none" id="links">
               <li class="nav-item">
                 <a class="nav-link" href="register.html">Sign Up</a>
@@ -67,26 +86,13 @@
                 <a id="user" class="nav-link" href="#">user</a>
               </li>
             </ul>
-            <ul class="navbar-nav ms-auto" id="">
-              <li class="nav-item d-flex align-items-center position-relative">
-                <span class="badge badge_notification bg-danger rounded-circle"
-                  >1</span
-                >
-                <i class="fa-solid fa-cart-shopping cart_icon"></i>
-                <div class="carts_products">
-                  <div></div>
-                  <a class="text-reset" href="cart.html"
-                    >view all products</a
-                  >
-                </div>
-              </li>
-            </ul>
+        
+
           </ul>
         </div>
       </div>
     </nav>
     <!-- navbar end  -->
-    <!-- <i class="fa-solid fa-cart-shopping"></i> -->
     <!-- start products page  -->
 
     <div class="container">
@@ -272,6 +278,21 @@
       </div>
     </footer>
     <!-- footer end -->
+       <!-- dashboard icon -->
+       <div
+       id="dashboard_icon"
+       class="dashboard_icon_container btn"
+       data-bs-container="body"
+       data-bs-toggle="popover"
+       data-bs-placement="top"
+       data-bs-content="Admin Dashboard"
+       data-bs-trigger="hover focus"
+     >
+       <a class="text-reset" href="dashboard.html">
+         <i class="fa-solid fa-chart-line fa-2xl dashboad_i"></i>
+       </a>
+     </div>
+     <!-- dashboard icon -->
     <!-- arrow to top -->
     <a id="to_top_btn" class="to_top text-reset text-decoration-none" href="#">
       <i class="fa-solid fa-arrow-turn-up fa-bounce to_top_icon"></i>
@@ -280,7 +301,6 @@
     <!-- bootstrap -->
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-    <!-- <script src="js/products.js"></script> -->
 
     <script  src="js/cartDetails.js"></script>
   </body>

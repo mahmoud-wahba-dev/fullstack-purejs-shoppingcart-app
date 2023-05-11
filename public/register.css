@@ -2,3 +2,16 @@
 #user_info {
     display: none;
 }
+
+
+
+.dv_debug {
+    text-align: center;
+    padding: 17px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+  }
+  

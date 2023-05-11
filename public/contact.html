@@ -25,7 +25,7 @@
 
   <body>
     <!-- navbar start  -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark ">
       <div class="container-fluid">
         <a class="navbar-brand logo_container" href="#">
           <img class="img-fluid" src="imgs/bakery-logo-dark.png" alt="" />
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link " href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT US</a>
@@ -58,11 +58,40 @@
             <li class="nav-item">
               <a class="nav-link active" href="contact.html">CONTACT</a>
             </li>
-       
 
             <li class="nav-item">
               <a class="nav-link" href="products.html">PRODUCTS</a>
             </li>
+            <ul class="navbar-nav ms-auto" id="links">
+              <li class="nav-item">
+                <a class="nav-link " href="register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Sign In</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto" id="user_info">
+              <li class="nav-item">
+                <a id="user" class="nav-link" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a id="log_out" class="nav-link" href="#">Log out</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-none" id="links">
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Sign In</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto" id="user_info">
+              <li class="nav-item">
+                <a id="user" class="nav-link" href="#">user</a>
+              </li>
+            </ul>
+        
           </ul>
         </div>
       </div>
@@ -147,7 +176,7 @@
                   <div class="error_msg"></div>
                 </div>
                 <div class="">
-                  <button class="bg-warning btn_send">SEND</button>
+                  <button type="submit" class="bg-warning btn_send">SEND</button>
                 </div>
               </form>
             </div>
@@ -354,6 +383,21 @@
       </div>
     </footer>
     <!-- footer end -->
+       <!-- dashboard icon -->
+       <div
+       id="dashboard_icon"
+       class="dashboard_icon_container btn"
+       data-bs-container="body"
+       data-bs-toggle="popover"
+       data-bs-placement="top"
+       data-bs-content="Admin Dashboard"
+       data-bs-trigger="hover focus"
+     >
+       <a class="text-reset" href="dashboard.html">
+         <i class="fa-solid fa-chart-line fa-2xl dashboad_i"></i>
+       </a>
+     </div>
+     <!-- dashboard icon -->
     <!-- arrow to top -->
     <a id="to_top_btn" class="to_top text-reset text-decoration-none" href="#">
       <i class="fa-solid fa-arrow-turn-up fa-bounce to_top_icon"></i>

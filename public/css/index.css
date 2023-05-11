@@ -540,3 +540,33 @@ h2 {
 .top_100 {
   top: 100px;
 }
+#user_info {
+  display: none;
+}
+
+/* dashboard_icon */
+
+.dashboard_icon_container {
+  transform: translateX(-50%);
+  min-height: 80px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #d09e5b;
+  transition: all .5s;
+}
+.dashboad_i {
+  color: #fff;
+  font-size: 40px;
+}
+
+.dashboard_icon_container:hover{
+  transform: translateX(0);
+  background-color: cornflowerblue;
+
+
+}
+/* dashboard_icon */
