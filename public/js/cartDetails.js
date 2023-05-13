@@ -18,8 +18,8 @@ function logDataset() {
 
   itemDom.innerHTML = `
 <img height="50px" src="${productDetails.image}" alt="">
-<h2>  ${productDetails.name} </h2>
-<h3>  ${productDetails.details} </h3>
+<h2 class="my-4">  ${productDetails.name} </h2>
+<h3 class="my-4">  ${productDetails.details} </h3>
 <h2> Price ${productDetails.price} $ </h2>
 `;
 }

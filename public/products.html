@@ -58,7 +58,7 @@
             </li>
             <ul class="navbar-nav ms-auto" id="links">
               <li class="nav-item">
-                <a class="nav-link " href="register.html">Sign Up</a>
+                <a class="nav-link" href="register.html">Sign Up</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Sign In</a>
@@ -72,7 +72,6 @@
                 <a id="log_out" class="nav-link" href="#">Log out</a>
               </li>
             </ul>
-
 
             <ul class="navbar-nav ms-auto d-none" id="links">
               <li class="nav-item">
@@ -98,29 +97,47 @@
                   <a class="text-reset" href="cart.html">view all products</a>
                 </div>
               </li>
-
             </ul>
-
-            
           </ul>
         </div>
       </div>
     </nav>
     <!-- navbar end  -->
     <!-- start products page  -->
-
-    <div class="container position-relative top_100">
-      <div class="my-4">
-        <input
-          id="search"
-          class="form-control"
-          type="search"
-          placeholder="Search By Name"
-        />
-      </div>
-
-      <div class="products"></div>
+    <!-- position-relative top_100 -->
+<div class="wrapper position-relative top_100">
+  <div class="container ">
+    <div class="my-4">
+      <input
+        id="search"
+        class="form-control"
+        type="search"
+        placeholder="Search By Name"
+      />
     </div>
+    <div class="row gy-5 products">
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="img_modal">
+
+      </div>
+      <div class="img_caption_modal" id="img_caption">
+
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- footer start -->
     <footer class="bg-dark text-white py-5 pb-2">
@@ -297,21 +314,21 @@
       </div>
     </footer>
     <!-- footer end -->
-       <!-- dashboard icon -->
-       <div
-       id="dashboard_icon"
-       class="dashboard_icon_container btn"
-       data-bs-container="body"
-       data-bs-toggle="popover"
-       data-bs-placement="top"
-       data-bs-content="Admin Dashboard"
-       data-bs-trigger="hover focus"
-     >
-       <a class="text-reset" href="dashboard.html">
-         <i class="fa-solid fa-chart-line fa-2xl dashboad_i"></i>
-       </a>
-     </div>
-     <!-- dashboard icon -->
+    <!-- dashboard icon -->
+    <div
+      id="dashboard_icon"
+      class="dashboard_icon_container btn"
+      data-bs-container="body"
+      data-bs-toggle="popover"
+      data-bs-placement="top"
+      data-bs-content="Admin Dashboard"
+      data-bs-trigger="hover focus"
+    >
+      <a class="text-reset" href="dashboard.html">
+        <i class="fa-solid fa-chart-line fa-2xl dashboad_i"></i>
+      </a>
+    </div>
+    <!-- dashboard icon -->
     <!-- arrow to top -->
     <a id="to_top_btn" class="to_top text-reset text-decoration-none" href="#">
       <i class="fa-solid fa-arrow-turn-up fa-bounce to_top_icon"></i>
@@ -320,6 +337,6 @@
     <!-- bootstrap -->
     <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
-      <script  src="js/products.js"></script>
+    <script src="js/products.js"></script>
   </body>
 </html>

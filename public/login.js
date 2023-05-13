@@ -43,16 +43,10 @@ async function checkUserData() {
   }
 }
 
-
-
 // check if user already login from last time
 // let userToken = localStorage.getItem("userToken")
-window.onload = function(){
+window.onload = function () {
   if (userToken) {
-    window.location = "index.html"
-      console.log("user token exist");
-  }else {
-    console.log("user token  not exist");
-
+    window.location = "index.html";
   }
-}
+};

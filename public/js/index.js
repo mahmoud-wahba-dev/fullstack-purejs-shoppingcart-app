@@ -24,14 +24,11 @@ let log_out = document.querySelector("#log_out");
 // check if user already login from last time
 let userToken = localStorage.getItem("userToken");
 document.addEventListener("DOMContentLoaded" , function () {
-  console.log("asz");
   if (userToken) {
     links.remove();
     userInfo.style.display = "flex";
-    console.log("user token exist");
     showUserName();
   } else {
-    console.log("user token  not exist");
     userInfo.remove();
   }
 })
@@ -48,20 +45,16 @@ function showUserName() {
   fetch("http://127.0.0.1:4000/users/profile", requestOptions)
     .then((response) => response.json())
     .then((result) => {
-      console.log(result);
       userDom.innerHTML = result.username;
 
 
       log_out.addEventListener("click", () => {
-          console.log("click");
           localStorage.removeItem("userToken");
-          window.location.reload();
+          window.location.href = "index.html";
         });
 
 
-      console.log(result.isAdmin);
       if (result.isAdmin == "true") {
-          console.log("admin true");
           dashboardIcon.style.display = "flex";
 
       }else{
@@ -76,7 +69,6 @@ function showUserName() {
 
 
     })
-    // .catch((error) => console.log("error", error));
 }
 
 

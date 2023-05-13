@@ -8,11 +8,9 @@ let ordersBtn = document.getElementById("orders_btn");
 let ordersTableContainer = document.getElementById("orders_table_container");
 let producTableContainer = document.getElementById("product_table_container");
 
-
-
-window.onload =function(){
-    fetchOrders();
-}
+window.addEventListener("DOMContentLoaded", function () {
+  fetchOrders();
+});
 async function fetchOrders() {
   let response = await fetch("http://127.0.0.1:4000/orders");
   let data = await response.json();

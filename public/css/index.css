@@ -206,7 +206,7 @@ h2 {
   /* min-height: 345px; */
   background-color: #f9f9f9;
   margin: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
 }
 .prod_details {
@@ -216,6 +216,7 @@ h2 {
   bottom: 0;
   opacity: 0;
   transition: all 0.5s;
+  text-align: center;
 }
 .prod_title {
   font-weight: bold;
@@ -285,6 +286,12 @@ h2 {
 .btn_prod:hover {
   background-color: var(--gray);
   color: #fff;
+}
+
+
+.prod_title a {
+  cursor: pointer;
+  color: white;
 }
 /* products sec end */
 /* service sec start */
