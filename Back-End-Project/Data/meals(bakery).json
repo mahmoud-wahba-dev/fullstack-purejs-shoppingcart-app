@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Ciabatta",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/bread.jpg",
+    "category": "BreakFast",
+    "price": 50
+  },
+
+  {
+    "name": "Black forest",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/cake-1.jpg",
+    "category": "Lunch",
+    "price": 100
+  },
+  {
+    "name": "Cappuccino Cheesecake",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/cake-2.jpg",
+    "category": "Lunch",
+    "price": 120
+  },
+  {
+    "name": "Amaretti Cookie",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/cookie-1.jpg",
+    "category": "BreakFast",
+    "price": 15
+  },
+
+  {
+    "name": "Chocolate Tarts",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/cookie-2.jpg",
+    "category": "Dinner",
+    "price": 25
+  },
+
+  {
+    "name": "Croissant",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/danish.jpg",
+    "category": "Dinner",
+    "price": 5
+  },
+
+  {
+    "name": "Maple Oat Muffin",
+    "details": "Lorem ipsum dolor sit amet, consectetur advising elia.",
+    "image": "http://localhost:4000/imgs/muffin.jpg",
+    "category": "Dinner",
+    "price": 20
+  }
+]
